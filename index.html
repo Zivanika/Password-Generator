@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/657c588bea.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- <script src="https://kit.fontawesome.com/657c588bea.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+<body>
+    <div class="container">
+      <div class="heading">Password Generator</div>
+      <div class="inBox">
+        <div class="in" id="inValue"></div>
+        <div class="in" id="inCopy"><span class="material-symbols-outlined">
+            content_copy
+            </span></div>
+      </div>
+      <div class="lines">
+        <div class="lne" id="line1"></div>
+        <div class="lne" id="line2"></div>
+        <div class="lne" id="line3"></div>
+      </div>
+      <div class="lngth">
+        <div class="lngthslider" id="lenslider"><input type="range" min="1" max="30" value="8" id="inputSlider" style="accent-color: green;"></div>
+        <div class="lngthslidervalue" id="lenvalue">8</div>
+      </div>
+      <div class="content">
+      <div class="lowerChars" id="lowerChars">Include Lowercase Characters(a-z)<div class="center">
+        <input type="checkbox"  id="lowcheck" name="lc">
+       </div></div>
+      <div class="upperChars" id="upperChars">Include Uppercase Characters(A-Z)<div class="center">
+        <input type="checkbox"  id="upcheck" name="uc"></div></div>
+      <div class="Numbers" id="allNums">Include Numbers(0-9)<div class="center">
+        <input type="checkbox"  id="numcheck" name="nc"></div></div>
+      <div class="Symbols" id="allSyms">Include Symbols(~-*)<div class="center">
+        <input type="checkbox"  id="symcheck" name="sc"></div></div>
+    </div>
+    <div class="submitBtn" id="genBtn" style="--clr: #069a28 "><span>Generate Password</span><i></i></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
